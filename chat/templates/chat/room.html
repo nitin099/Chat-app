@@ -117,7 +117,7 @@
     var username = {{ username }};
     var chatSocket = new ReconnectingWebSocket(
         'wss://' + window.location.host +
-        '/wss/chat/' + roomName + '/');
+        '/ws/chat/' + roomName + '/');
     chatSocket.onopen = function(e) {
       fetchMessages();
     }
